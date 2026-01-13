@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Error</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+<body>
+    <main class="container">
+        <section id="error" class="section">
+            <h1 id="errMsg">An error occurred</h1>
+            <h2 id="errStatus"></h2>
+            <pre id="errStack"></pre>
+        </section>
+
+        <footer class="site-footer">
+            <p>© 2026</p>
+        </footer>
+    </main>
+
+    <script>// Populate error values from query string if provided:
+      // /views/error.html?message=Something&status=500&stack=stacktrace
+      (function () {
+        const p = new URLSearchParams(window.location.search);
+        const msg = p.get('message');
+        const status = p.get('status');
+        const stack = p.get('stack');
+
+        if (msg) document.getElementById('errMsg').textContent = msg;
+        if (status) document.getElementById('errStatus').textContent = status;
+        if (stack) document.getElementById('errStack').textContent = stack;
+      })();</script>
+
+    <script src="/javascripts/main.js"></script>
+</body>
+</html>

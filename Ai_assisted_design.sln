@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36811.4 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "Ai_assisted_design", "Ai_assisted_design\Ai_assisted_design.esproj", "{BB4BB5B1-A698-07C5-BF90-BA398376498E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB4BB5B1-A698-07C5-BF90-BA398376498E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB4BB5B1-A698-07C5-BF90-BA398376498E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB4BB5B1-A698-07C5-BF90-BA398376498E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BB4BB5B1-A698-07C5-BF90-BA398376498E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB4BB5B1-A698-07C5-BF90-BA398376498E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB4BB5B1-A698-07C5-BF90-BA398376498E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F727B575-062D-4534-B79D-731694026FD4}
+	EndGlobalSection
+EndGlobal
