@@ -31,6 +31,7 @@ body{
   position:absolute;
   inset:0;
   background-image: url('/images/hero.jpg');
+  background-color: #7FFFD4;
   background-size:cover;
   background-position:center;
   transform:translateZ(0);
@@ -167,4 +168,31 @@ body{
   .fab{left:12px; width:48px; height:48px}
   .nav{width:220px}
   .placeholder-image{height:140px}
+}
+
+#twitch-container{
+  width: 100%;
+  display: inline-flex;
+  background-color: #6495ED;
+}
+#twitch-container p{
+  border:8px solid rgba(0,0,0,0.8);
+  border-radius:8px;
+  font-size: 1.50rem;
+  color: #333;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-left: 100px;
+  justify-self: left;
+}
+
+#twitch-embed{
+  border:8px solid rgba(0,0,0,0.8);
+  border-radius:8px;
+  display: inline-flex;
+  float: right;
+  margin-left: auto;
+  margin-right: 100px;
+  right: 0;
+  top: 0;
 }

@@ -8,8 +8,23 @@
 </head>
 <body>
     <!-- Static layout file: use as a starting point if you want separate layouts -->
+    <!-- slide-out navigation -->
+    <button id="navToggle" class="fab" type="button" aria-label="Open navigation" aria-expanded="false">&#9776;</button>
+
+    <aside id="sideNav" class="nav" role="navigation" aria-hidden="true">
+        <button id="navClose" class="close" type="button" aria-label="Close navigation">×</button>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/nebula">Nebula</a></li>
+                <li><a href="#pictures">Pictures</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </aside>
+
     <!-- Insert page content here -->
-     <div id="content">{% block content %}{% endblock %}</div>
+    <%- body %>
     <script src="/javascripts/main.js"></script>
 </body>
 </html>

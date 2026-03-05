@@ -3,16 +3,16 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var ejsLayouts = require('express-ejs-layouts');
+var ejsMate = require('ejs-mate');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var nebulaRouter = require('./routes/nebula');
 
 var app = express();
 
-app.use(ejsLayouts);
+//app.use(ejsLayouts);
 app.set('view engine', 'html');
-app.engine('html', require('ejs').renderFile);
+app.engine('html', ejsMate);
 app.set('layout', 'layout');
 
 // NOTE: no view engine � serving static HTML files instead
@@ -31,8 +31,9 @@ app.use('/javascripts', express.static(path.join(__dirname, 'public', 'javascrip
 // Expose views directory so static HTML can be reached if needed
 app.use('/views', express.static(path.join(__dirname, 'views')));
 
+
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/nebula', nebulaRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
