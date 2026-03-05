@@ -3,13 +3,19 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var ejsLayouts = require('express-ejs-layouts');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
 
-// NOTE: no view engine — serving static HTML files instead
+app.use(ejsLayouts);
+app.set('view engine', 'html');
+app.engine('html', require('ejs').renderFile);
+app.set('layout', 'layout');
+
+// NOTE: no view engine ï¿½ serving static HTML files instead
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -33,7 +39,7 @@ app.use(function(req, res, next) {
   next(createError(404));
 });
 
-// error handler — send static error page when available, fallback to text
+// error handler ï¿½ send static error page when available, fallback to text
 app.use(function(err, req, res, next) {
   // provide minimal locals for possible logging or middleware
   res.locals.message = err.message;
