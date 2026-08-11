@@ -7,6 +7,7 @@ var ejsMate = require('ejs-mate');
 
 var indexRouter = require('./routes/index');
 var nebulaRouter = require('./routes/nebula');
+var gamesRouter = require('./routes/games');
 
 var app = express();
 
@@ -34,6 +35,7 @@ app.use('/views', express.static(path.join(__dirname, 'views')));
 
 app.use('/', indexRouter);
 app.use('/nebula', nebulaRouter);
+app.use('/games', gamesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
