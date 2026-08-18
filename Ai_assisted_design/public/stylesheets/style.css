@@ -169,7 +169,7 @@ body{
   .nav{width:220px}
   .placeholder-image{height:140px}
 }
-
+/* Nebula page handlers */
 #twitch-container{
   width: 100%;
   display: inline-flex;
