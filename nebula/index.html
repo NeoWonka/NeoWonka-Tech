@@ -1,0 +1,24 @@
+---
+layout: layout
+title: June Nebula
+permalink: /nebula/
+---
+
+<main class="container">
+    <h1>June_Nebula</h1>
+    <h2>This is your portal to all things June_Nebula!</h2>
+
+    <div id="twitch-container">
+        <p>June_Nebula is available to watch live on Twitch, Kick, and Youtube! Follow on Tiktok for even more content!</p>
+        <div id="twitch-embed"></div>
+    </div>
+</main>
+
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+<script>
+    new Twitch.Player("twitch-embed", {
+        channel: "june_nebula",
+        height: 378,
+        width: 620
+    });
+</script>
