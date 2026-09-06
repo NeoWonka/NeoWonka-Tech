@@ -20,6 +20,7 @@ body{
 .hero{
   position:relative;
   height:var(--hero-height);
+  background-image: url('../images/meditation-cyberpunk-1-69123-1024x576-MM (1).jpg');
   min-height:360px;
   overflow:hidden;
   display:flex;
@@ -30,7 +31,6 @@ body{
 .hero-bg{
   position:absolute;
   inset:0;
-  background-image: url('../images/meditation-cyberpunk-1-69123-1024x576-MM (1).jpg');
   background-size:cover;
   background-position:center;
   object-fit:cover;
