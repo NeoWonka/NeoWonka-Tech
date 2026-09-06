@@ -20,23 +20,14 @@ body{
 .hero{
   position:relative;
   height:var(--hero-height);
-  background-image: url('../images/meditation-cyberpunk-1-69123-1024x576-MM (1).jpg');
+  background-image: url("../images/meditation-cyberpunk-1-69123-1024x576-MM-80 (1).jpg");
+  background-size:cover;
+  background-position:center;
   min-height:360px;
   overflow:hidden;
   display:flex;
   align-items:center;
   justify-content:center;
-}
-
-.hero-bg{
-  position:absolute;
-  inset:0;
-  background-size:cover;
-  background-position:center;
-  object-fit:cover;
-  transform:translateZ(0);
-  will-change:transform;
-  z-index:0;
 }
 
 .hero-overlay{
@@ -61,6 +52,13 @@ body{
   width: 100%;
   height: 180px;
   object-fit: cover;
+}
+
+.card-image img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
 }
 
 /* Floating action button (left side) */
